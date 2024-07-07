@@ -14,9 +14,10 @@ spec:
       name: testpod
       labels:
         name: lbl-1
-      spec:
+  spec:
         containers:
          - name: my-container
            image: nginx:latest
            ports:
-             containerPort: 80
+            containerPort: 80
+  
