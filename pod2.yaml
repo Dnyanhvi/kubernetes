@@ -3,7 +3,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: Pod2
-  env: dev2
+  labels:
+    env: pod2
   containers:
   - name: C02    
     image: ubuntu
