@@ -18,3 +18,5 @@ spec:
     containers:
         - name: my-container
           image: nginx 
+          containerPort: 80
+            
