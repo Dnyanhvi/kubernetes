@@ -3,21 +3,18 @@ kind: Deployment
 metadata:
   name: my-deployment
   labels:
-    name: lbl-1
+    env: test 
 spec:
   replicas: 3
   selector:
     matchLabels:
-      name: lbl-1
+      env: test
   template:
     metadata:
       name: testpod
       labels:
-        name: lbl-1
+        env: test
     spec:
     containers:
-         - name: my-container
-           image: nginx:latest
-           ports:
-             - containerPort: 80
-  
+        - name: my-container
+          image: nginx 
