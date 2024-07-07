@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Deploy1
+spec:
+relicas: 2
+selector:
+   matchlabels:
+      name: deployement
+template:
+   metadata:
+    - name: testpod
+      labels:
+       name: deployement
+
+    - name: testpod2
+      labels:
+       name: deployement
+   spec:
+      containers: 
+            name: conntr-one
+            image: nginx    
+     
+
+     
