@@ -16,7 +16,8 @@ spec:
         env: test
     spec:
     containers:
-        - name: my-container
-          image: nginx 
-          containerPort: 80
+       name: nginx-cntr
+       image: nginx:latest
+       ports:
+        - containerPort: 80
             
