@@ -15,7 +15,7 @@ spec:
       labels:
         env: test
     spec:
-    containers:
+     containers:
        name: nginx-cntr
        image: nginx:latest
        ports:
