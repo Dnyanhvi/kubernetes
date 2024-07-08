@@ -1,12 +1,18 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name:  podd2
+  name:  podresource
   labels:
     name: dev-lbl
 spec:
   containers:
-  - name: co-2
-    image: nginx
-    ports:
-      - containerPort: 80
+    - name: resource
+      image: nginx
+      resource:
+         requests:
+            memory: "64Mi"
+            cpu: "100m"
+         limit:
+             memory: "128Mi"
+             cpu: "200m"
+             
