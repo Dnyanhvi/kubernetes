@@ -5,12 +5,8 @@ metadata:
   labels:
     env: dev
 spec:
-  containers:
-   - name: pod1
+containers:
+   - name: c01
      image: nginx
-     resources:
-       limits:
-         memory: "128Mi"
-         cpu: "500m"
      ports:
        - containerPort: 80

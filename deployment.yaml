@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: my-deployment
   labels:
-    env: test 
+    env: test
 spec:
   replicas: 3
   selector:
@@ -15,9 +15,8 @@ spec:
       labels:
         env: test
     spec:
-     containers:
-       name: nginx-cntr
-       image: nginx:latest
-       ports:
-        - containerPort: 80
-            
+    containers:
+        - name: nginx-cntr
+          image: nginx:latest
+          ports:
+           - containerPort: 80
