@@ -4,12 +4,11 @@ kind: Pod
 metadata:
   name: Pod2
   labels:
-    env: pod2
+    env: devv
+spec:
   containers:
-  - name: C02    
-    image: ubuntu
-    ports:
-      - containerPort: 80
-  nodeSelector :
-      hardware: t2-medium 
+   - name: C02    
+     image: httpd
+     ports:
+       - containerPort: 80
 
