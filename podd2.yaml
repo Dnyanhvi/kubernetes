@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name:  podd2
+  labels:
+    name: dev-lbl
+spec:
+  containers:
+  - name: co-2
+    image: nginx
+    ports:
+      - containerPort: 80
